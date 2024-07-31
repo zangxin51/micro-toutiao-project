@@ -9,7 +9,7 @@
       </el-form-item>
       <el-form-item label="文章类别"  prop="type">
         <el-select v-model="formData.type" placeholder="请选择文章类别">
-          <el-option v-for="item in article" :label="item.name" :value="item.type">
+          <el-option v-for="item in article" :label="item.name" :value="item.type" :key="item.name">
           </el-option>
         </el-select>
       </el-form-item>
